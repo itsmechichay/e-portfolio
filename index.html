@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <title>Niña Montecer | Personal Website</title>
+</head>
+<body>
+    <div class="container">
+    
+    <div class='cursor' id="cursor"></div>
+    <div id="particles-js"></div>
+
+    <!-- --------------- HEADER --------------- -->
+        <nav id="header">
+            <a href="#home" class="nav-link"><img src="images/favicon.png" alt="logo" class="logo"></a>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About Me</a>
+                        <ul class="submenu">
+                            <li class="submenu-list"><a href="#about">Academic Background</a></li>
+                            <li class="submenu-list"><a href="#about">Certifications</a></li>
+                            <li class="submenu-list"><a href="#skills">Skills</a></li>
+                        </ul>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#practicum" class="nav-link">Practicum</a>
+                        <ul class="submenu">
+                            <li class="submenu-list-p"><a href="#preojt-documents">Pre-OJT Documents</a></li>
+                            <li class="submenu-list-p"><a href="#company-profile">Company Profile</a></li>
+                            <li class="submenu-list-p"><a href="#accomplishment-reports">Accomplishment Reports</a></li>
+                            <li class="submenu-list-p"><a href="#completion-documents">Completion Documents</a></li>
+                            <li class="submenu-list-p"><a href="#ojt-experience">OJT Experience</a></li>
+                        </ul>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <div class="socials">
+            <a href="https://www.instagram.com/ninimontecer/" target="_blank"><img src="images/instagram logo.png" class="social-media" alt="instagram-logo"></a>
+            <a href="https://www.facebook.com/ninamontecer/" target="_blank"><img src="images/facebook logo.png" class="social-media" alt="fb-logo"></a>
+            <a href="https://www.linkedin.com/in/ni%C3%B1a-jorene-montecer-082774284/" target="_blank" ><img src="images/linkedin logo.png" class="social-media" alt="linkedin-logo"></a>
+            <a href="https://itsmechichay.github.io/mypersonalwebsite/" target="_blank"><img src="images/website.png" class="social-media" alt="web-logo"></a>
+        </div>
+
+        <div class="contact">
+            <a href="Mailto:montecer.ninajorene@gmail.com"><img src="images/mail.png" alt="email-pic" class="contactpic"></a>
+            <a href="Tel:09478544565"><img src="images/call.png" alt="phone-pic" class="contactpic"></a>
+        </div>   
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+
+        <!-- -------------- FEATURED BOX ---------------- -->
+        <section class="featured-box" id="home">
+            <div class="featured-text">
+                <div class="featured-text-card">
+                    <span class="featured-fname">NiñaJorene</span>Montecer
+                </div>
+                <div class="featured-name">
+                    <p>I am <span class="typedText"></span>,</p>
+                </div>
+                <div class="featured-text-info">
+                    <p>An <strong>Information Technology</strong> student who is eager and driven for continuous learning 
+                        and striving on staying at the forefront of emerging trends in the dynamic technology landscape. 
+                        My ability to collaborate with a team, to organize and facilitate programs and activities, 
+                        to communicate concepts effectively, and approach challenges with a strategic perspective 
+                        sets me apart and have contributed significantly in enhancing my interpersonal skills. 
+                        I am particularly interested in opportunities that allow me tocontribute to innovative projects, 
+                        where my skills and dedication can make a tangible impact.
+                    </p>
+                </div>
+                <div class="featured-text-btn">
+                    <a href="#about"><button class="home-btn">Hello World!</button></a>
+                </div>                     
+            </div>
+          <!-- <div class="featured-image">
+            <div class="image">
+                <img src="images/avatar.jpg" alt="avatar">
+            </div>
+          </div> -->
+        </section>
+
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1>About Me</h1>
+            </div>
+            <div class="about-row">
+                <div class="col" id="academic-background">
+                    <div class="about-info">
+                        <h3><u> ACADEMIC BACKGROUND</u></h3>
+                        <div class="about-row">
+                            <div class="column">
+                                <div class="about-title"><strong>BS INFORMATION TECHNOLOGY</strong></div>
+                                <div class="row">De La Salle Lipa</div>
+                            </div>
+                            <div class="about-date">
+                                <span>2020-PRESENT</span>
+                            </div>
+                        </div>
+                        <div class="cert-row">
+                            <div class="column">
+                                <div class="about-title"><strong>Science Technology Engineering and Mathematics [STEM]</strong></div>
+                                <div class="row"><em>Senior High School</em></div>
+                                <div class="row"><em>Junior High School</em></div>
+                                <div class="row">La Consolacion College Tanauan</div>
+                            </div>
+                            <div class="about-col">
+                                <div class="about-date">
+                                    <span>2018 - 2020</span>
+                                </div>
+                                <div class="about-date">
+                                    <span>2014 - 2018</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col" id="certifications">
+                    <div class="cert-info">
+                        <h3><u> CERTIFICATIONS</u></h3>
+                        <div class="cert-row">
+                            <div class="column">
+                                <div class="cert-title">
+                                    <a href="https://www.credly.com/badges/d61e51ec-8eb7-4612-9ed4-d6a01f2e1550/linked_in_profile" target="_blank" class="tooltip">
+                                        <b class="row">Fortinet Certified Fundamentals Cybersecurity</b>
+                                        <span class="tooltiptext">Click to view credential</span>
+                                    </a>    
+                                </div>
+                                <div class="row">Fortinet</div>
+                            </div>
+                            <div class="cert-date">
+                                <span>APRIL 2024</span>
+                            </div>
+                        </div>
+                        <div class="cert-row">
+                            <div class="column">
+                                <div class="cert-title">
+                                    <a href="https://www.credly.com/badges/3ecbd060-44c3-4576-a382-3299257611d9/linked_in_profile" target="_blank" class="tooltip">
+                                        <b class="row">Introduction to Cybersecurity</b>
+                                        <span class="tooltiptext">Click to view credential</span>
+                                    </a>    
+                                </div>
+                                <div class="row">Cisco</div>
+                            </div>
+                            <div class="cert-date">
+                                <span>AUGUST 2023</span>
+                            </div>
+                        </div>
+                        <div class="cert-row">
+                            <div class="column">
+                                <div class="cert-title">
+                                    <a href="https://certificate.fitacademy.ph/validate/index.php?cer_id=8a438154e925d20e00cccd1a616573291782a40ec21c8e082e1875d63b224ce0" target="_blank" class="tooltip">
+                                        <b class="row">SAP Certified Application Associate SAP Business One</b>
+                                        <span class="tooltiptext">Click to view credential</span>
+                                    </a>    
+                                </div>
+                                <div class="row">FIT Academy</div>
+                            </div>
+                            <div class="cert-date">
+                                <span>DECEMBER 2022</span>
+                            </div>
+                        </div>
+                        <div class="cert-row">
+                            <div class="column">
+                                <div class="cert-title">
+                                    <a href="https://www.credly.com/badges/22f65a21-f624-47f0-b5bd-d21b2ec65413/linked_in_profile" target="_blank" class="tooltip">
+                                        <b class="row">CompTIA IT Fundamentals (ITF+)</b>
+                                        <span class="tooltiptext">Click to view credential</span>
+                                    </a>    
+                                </div>
+                                <div class="row">CompTIA</div>
+                            </div>
+                            <div class="cert-date">
+                                <span>JULY 2022</span>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+            </div>
+            <section class="section" id="skills">
+                <h3><u>SKILLS</u></h3>
+                <div class="skills-wrapper" >
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Programming Languages</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>C++</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Database Management</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>MySQL</span>
+                            <span>MS Access</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Robotic Process Automation</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>UiPath Studio</span>
+                        </div>
+                    </div> 
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Enterprise Resource Planning</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>SAP S/4HANA</span>
+                            <span>SAP Business One</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Ethical Hacking</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>Ettercap</span>
+                            <span>Wireshark</span>
+                            <span>BurpSuite</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Documentation and Design</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>MS Office</span>
+                            <span>Google Workspace</span>
+                            <span>Canva</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Front End Development</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>Vue.js</span>
+                            <span>Quasar Framework</span>
+                            <span>JSON Server</span>
+                        </div>
+                    </div>
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Software Development Tools</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>VSCode</span>
+                            <span>GitLab</span>
+                            <span>GitHub</span>
+                            <span>Node.js</span>
+                            <span>Cypress</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section> 
+
+       <!-- -------------- PRACTICUM ---------------- -->
+       <section class="section" id="practicum">
+            <div class="top-header">
+                <h1>Practicum</h1>
+            </div>
+            <div class="practicum-container">
+                <!-- PRE OJT DOCUMENTS -->
+                <section class="section" id="preojt-documents">
+                    <div class="practicum-box">
+                        <h3><u> PRE-OJT DOCUMENTS</u></h3>
+                        <div class="predocu-button">
+                            <a href="files/Notarized-Pixel8-MOA.pdf" target="_blank" class="btn">
+                                <i class="uil uil-file-contract"></i> Memorandum of Agreement
+                            </a>
+                            <a href="files/Form 3_ OJT Waiver Form_MONTECER,N.pdf" target="_blank" class="btn">
+                                <i class="uil uil-file-shield-alt"></i> OJT Waiver
+                            </a>
+                            <a href="files/MONTECER, Niña - OJT Acceptance Form 22.pdf" target="_blank" class="btn">
+                                <i class="uil uil-file-check-alt"></i> OJT Acceptance Form
+                            </a>
+                            <a href="files/NiñaJoreneMontecer_CV.pdf" target="_blank" class="btn">
+                                <i class="uil uil-file-alt"></i> Curriculum Vitae
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- COMPANY PROFILE -->
+                <section class="section" id="company-profile">
+                    <div class="practicum-box">
+                        <div class="practicum-row">
+                            <div class="col" id="profile">
+                                <div class="practicum-info">
+                                    <h3><u>COMPANY PROFILE</u></h3>
+                                    <div class="profile-grid">
+                                        <a href="https://software.pixel8.ph/" target="_blank" title="Click for more info!">
+                                        <div class="img">
+                                            <img src="images/pixel8 logo.png" alt="pixel8logo">
+                                           <div class="profile-loc">Legazpi, Albay, Philippines</div>
+                                        </div>
+                                        <div class="profile-text">
+                                            <h3><strong>Pixel8 Web Solutions</strong></h3>
+                                            <p>envisions to provide web design, graphic design, web application development, 
+                                                web development, information system, mobile development & SEO for business, 
+                                                firms and government offices here and abroad. We aim to provide our clients 
+                                                a good return of investment by improving their business process thru efficient, 
+                                                fast and effective software solutions at par with the international 
+                                                standard and reduce their costs by offering fair and reasonable rates.</p>
+                                        </div></a>
+                                    </div>                                        
+                                </div>
+                            </div>
+                            <div class="col" id="jd">
+                                <div class="practicum-info">
+                                    <h3><u>JOB DESCRIPTION ROLE</u></h3>
+                                    <div class="jd-grid">
+                                        <div class="row">
+                                            <p>Position:</p>
+                                            <ul><li style="list-style: none;"><strong>Front End Development Intern</strong></li></ul>
+                                        </div>
+                                        <div class="row">
+                                            <p>Job Description:</p>
+                                            <ul>
+                                                <li style="list-style: none;">On-Job-Trainee is responsible for developing system components such as UI designs for front-end
+                                                    development. Their duties include meetings with the Developer unit and executing and reporting the tasks
+                                                    given by the Software Supervisor.</li>
+                                            </ul> 
+                                        </div>
+                                        <div class="row">
+                                            <p>Qualifications:</p>
+                                            <ul>
+                                                <li>Basic programming skills for the following technologies (HTML, CSS, Javascript)</li>
+                                                <li>Basic knowledge in web development using Javascript Frameworks, and Content Management Software (Vue.JS, Quasar, WordPress)</li>    
+                                                <li>Analytic problem solving skills</li>
+                                                <li>Acceptable level of clerical skills</li>
+                                            </ul> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- ACCOMPLISHMENT REPORTS -->
+                <section class="section" id="accomplishment-reports">
+                    <div class="accomplishment-box">
+                        <h3><u>ACCOMPLISHMENT REPORTS</u></h3>
+                        <div class="acc-button">
+                            <a href="files/MONTECER,NiñaJorene_W1-2-AccomplishmentReport.pdf" target="_blank" class="btn">
+                                <i class="uil uil-file"></i> WEEKS 1 & 2
+                            </a>
+                            <a href="files/MONTECER,NiñaJorene_W3-4-AccomplishmentReport.pdf" target="_blank" class="btn">
+                                <i class="uil uil-file"></i> WEEKS 3 & 4
+                            </a>
+                            <a href="files/MONTECER,NiñaJorene_W5-6-AccomplishmentReport.pdf" target="_blank" class="btn">
+                                <i class="uil uil-file"></i> WEEKS 5 & 6
+                            </a>
+                            <a href="files/MONTECER,NiñaJorene_W7-8-AccomplishmentReport.pdf" target="_blank" class="btn">
+                                <i class="uil uil-file"></i> WEEKS 7 & 8
+                            </a>
+                            <a href="files/MONTECER,NiñaJorene_W9-10-AccomplishmentReport.pdf" target="_blank" class="btn">
+                                <i class="uil uil-file"></i> WEEKS 9 & 10
+                            </a>
+                            <a href="files/MONTECER,NiñaJorene_W11-12-AccomplishmentReport.pdf" target="_blank" class="btn">
+                                <i class="uil uil-file"></i> WEEKS 11 & 12
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- COMPLETION DOCUMENTS -->
+                <section class="section" id="completion-documents">
+                    <div class="completion-box">
+                        <h3><u>COMPLETION DOCUMENTS</u></h3>
+                        <div class="completion-button">
+                            <a href="files/TRAINING CERTIFICATE - Niña Jorene Montecer.pdf" target="_blank" class="btn">
+                                <i class="uil uil-award"></i> Training Certificate
+                            </a>
+                            <a href="files/Niña-Competency.pdf" target="_blank" class="btn">
+                                <i class="uil uil-award"></i> Competency Certificate
+                            </a>
+                            <a href="files/Montecer - Certificate of Achievement.pdf" target="_blank" class="btn">
+                                <i class="uil uil-award"></i> Certificate of Achievement
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- OJT EXPERIENCE -->
+                <section class="section" id="ojt-experience">
+                    <div class="experience-box" id="experienceBox">
+                        <h3><u>OJT EXPERIENCE</u></h3>
+                        <div class="service-img">
+                            <img src="images/team photo.png" alt="service-two">
+                        </div>
+                        <div class="service-description">
+                            <h2><strong>OJT EXPERIENCE</strong></h2>
+                            <p>
+                            During my 486-hour internship at Pixel8 in the Frontend Development Unit, I gained proficiency in Vue.js, Quasar, Axios, and the JSON server. 
+                            My experience was really extraordinary, I thought it would be a quiet one wherein I will just do my task assigned to me, but it all turned out differently. 
+                            I became a team lead only days after I started, and I am very much grateful to be given this opportunity that’s why I gladly accepted it and took this chance 
+                            because I believe it could help me for my own personal growth, and at the same time midway, I realized that I could also have an impact to others. 
+                            And I do hope that that impact is a positive one. As a team leader, I improved my communication skills by interacting with diverse colleagues and 
+                            effectively managing tasks and meetings. I also enhanced my problem-solving abilities by staying ahead of the team, consulting documentation, and 
+                            encouraging collaboration. Balancing overlapping tasks from my internship and academics taught me prioritization and time management.
+                            <br><br>
+                            Another special experience during my internship was to attend the Leadership Development Program, as not all interns have the chance to join which
+                            me grateful for such opportunity. It was quite an eye-opener with the concepts to become an effective leader and a person in general.
+                            It was also insightful as even real-life experiences are shared by the supervisors. Upon the completion of my internship, I also did not expect to
+                            receive another certificate from the company that commended my dedication throughout my rendered hours. It was truly a remarkable experience
+                            which made me reflect as well with what I have done during the internship, as an intern and as a team leader.
+                            <br><br>
+                            This internship simulated a real-world work environment, preparing me to adapt to different professional settings and understand various 
+                            personalities. The experience at Pixel8 has been instrumental in developing my skills and confidence, bringing me closer to my career goals. 
+                            Although my internship has ended, I will continue to pursue my goals with the knowledge and experience gained. 
+                            <br><br>
+                            Unfamiliarities may be overwhelming but if we seek to gain knowledge and have the courage to step forward, we may be able to find ourselves 
+                            looking back on the progress that we have done in order to surpass those unfamiliarities rather than running away from it. 
+                            This might mean stepping out of our comfort zone, asking questions, and being willing to learn from others. Ultimately, it's through these 
+                            experiences that we grow and expand our knowledge and putting those knowledge into actions.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+       </section>
+
+       <!-- -------------- CONTACT BOX ---------------- -->
+       <section class="section" id="contact">
+          <div class="top-header">
+            <h1>Let's get in touch!</h1>
+            <span>Contact me here</span>
+          </div>
+          <div class="contact-list">
+            <div class="contact-button">
+                <button class="btn" onclick="CopyMe('+63 947 854 4565')" title="Click to copy"><i class="uil uil-phone"></i>&ensp;+63 947 854 4565</button>
+                <button class="btn" onclick="CopyMe('montecer.ninajorene@gmail.com')" title="Click to copy"><i class="uil uil-envelope"> </i>&ensp;montecer.ninajorene@gmail.com</button>
+                <button class="btn" onclick="CopyMe('https://www.linkedin.com/in/ni%C3%B1a-jorene-montecer-082774284/')" title="Click to copy"><i class="uil uil-linkedin"></i>&ensp;www.linkedin.com/in/niña-jorene-montecer-082774284</button>
+            </div>
+          </div>
+       </section>
+
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer>
+        <div class="top-footer">
+            <p1>Niña Jorene</p1> <p2>Montecer</p2>
+        </div>
+        <div class="middle-footer">
+            <ul class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Home</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#about">About</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#practicum">Practicum</a>
+                </li>
+                <li class="footer_menu_list">
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-social-icons">
+            <a href="https://www.facebook.com/ninamontecer/" target="_blank" class="icon"><i class="uil uil-facebook"></i></a>
+            <a href="https://www.instagram.com/ninimontecer/" target="_blank" class="icon"><i class="uil uil-instagram"></i></a>
+            <a href="mailto:montecer.ninajorene@gmail.com" class="icon"><i class="uil uil-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/ni%C3%B1a-jorene-montecer-082774284/" target="_blank" class="icon"><i class="uil uil-linkedin-alt"></i></a>
+            <a href="" class="icon"><i class="uil uil-globe"></i></a>
+        </div>
+        
+        <div class="bottom-footer">
+            <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Niña Jorene Montecer</a> - All rights reserved</p>
+        </div>
+    </footer>
+
+    </div>
+
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="script.js"></script>
+</body>
+</html>
