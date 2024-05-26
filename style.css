@@ -450,14 +450,18 @@ h3{
     padding-block: 30px 30px;
     padding-inline: 30px;
     width: 100%;
+    height: fit-content;
     background: var(--color-white);
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     border-radius: 20px;
-    margin-bottom: 90px;
+}
+.about-row {
+    display: flex;
+    justify-content: space-between;
 }
 .about-col {
     display: block;
-    padding-top: 30px;
+    margin-top: 10px;
 }
 .about-date{
     background: var(--third-color);
@@ -466,7 +470,7 @@ h3{
     padding: 10px 10px;
     border-radius: 50px;
     text-align: center;
-    margin-block: 5px;
+    margin-block: 20px;
     line-height: 10px;
     height: 30px;
     white-space: nowrap;
@@ -480,6 +484,7 @@ h3{
     padding-block: 30px 30px;
     padding-inline: 30px;
     width: 100%;
+    height: fit-content;
     background: var(--color-white);
     box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
     border-radius: 20px;
@@ -487,11 +492,7 @@ h3{
 .cert-row {
     display: flex;
     justify-content:space-between;
-    margin-bottom: -10px;
-}
-.about-row {
-    display: flex;
-    justify-content: space-between;
+    /* margin-bottom: 10px; */
 }
 .column {
     padding: 10px 0px;
