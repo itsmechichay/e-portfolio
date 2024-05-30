@@ -192,7 +192,7 @@ nav{
     line-height: 50px;
 }
 .nav_list:hover .submenu {
-    display: block;  /* Show submenu on hover */
+    display: block;
 }
 .active-link{
     position: relative;
@@ -233,7 +233,8 @@ nav{
 /* ----- FEATURED BOX ----- */
 .featured-box{
     position: relative;
-    display: flex;
+    /* display: flex; */
+    text-align: center;
     height: 100vh;
     min-height: 600px;
 }
@@ -241,7 +242,7 @@ nav{
 /* ----- FEATURED TEXT BOX ----- */
 .featured-text{
     min-height: 80vh;
-    margin-top: 30px;
+    padding-top: 30px;
     z-index: 2;
     text-align: center;
     align-content: center;
@@ -262,15 +263,13 @@ nav{
     font-weight: 600;
     color: var(--text-color-second);
     margin-block: 20px;
-    margin-bottom: 10px;
-    margin-top: 10px;
 }
 .typedText{
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     color: var(--fourth-color);
 }
 .featured-text-info{
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 30px;
     color: var(--text-color-second);
 }
@@ -280,20 +279,19 @@ nav{
     gap: 20px;
 }
 .featured-text-btn button.btn {
-    font-size: 16px;
+    font-size: 25px;
 }
-.featured-text-btn>.blue-btn{
+.featured-text-btn>.home-btn{
     background: var(--first-color);
     color: var(--color-white);
 }
-.featured-text-btn>.blue-btn:hover{
+.featured-text-btn>.home-btn:hover{
     background: var(--first-color-hover);
 }
 .socials{
     display: flex;
-    margin-top: 2em;
     gap: 30px;
-    height: 100vh;
+    height: 90vh;
     position: absolute;
     z-index: 2;
     padding: 60px;
@@ -320,9 +318,8 @@ nav{
     right: 0;
     top: 0;
     z-index: 3;
-    margin-top: 3em;
     gap: 30px;
-    height: 100vh;
+    height: 90vh;
     padding: 60px;
     flex-direction: column;
     align-items: center;
@@ -348,6 +345,7 @@ nav{
     display: inline-block;
     text-align: center;
     animation: btnFloat 3s ease-in-out infinite;
+    font-size: medium;
 }
 .home-btn:hover{
     background: var(--first-color);
@@ -437,24 +435,126 @@ h3{
 
 
 /* ----- ABOUT INFO ----- */
+.about-me-row {
+    display: grid;
+    grid-template-columns: 2fr 6fr;
+    grid-template-rows: 1000px;
+    gap: 10px;
+    height: 550px;
+}
+.img-container {
+    position: relative;
+    width: 100px;
+    padding: 30px;
+    animation: imgFloat 8s ease-in-out infinite;
+}
+.shape {
+    position: absolute;
+    top: 80px;
+    width: 225%;
+    height: 30%;
+    background-color: #f0f0f0; 
+    /* background: linear-gradient(to top left, #ffffff, #d6d5d5); */
+    border-radius: 5px;
+    box-shadow: 8px 8px 10px 0px var(--first-shadow-color);
+    z-index: -1; 
+}
+.row-image {
+    position: relative;
+    z-index: 1;
+    height: 45%;
+}
+.about-text-container {
+    position: relative;
+    max-width: fit-content;
+    padding-inline: 20px;
+    padding-block: 50px;
+}
+.big {
+    position: absolute;
+    font-size: 150px;
+    padding-top: 45px;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.1); 
+    z-index: 1; 
+}
+.about-text-info{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: var(--text-color-second);
+    z-index: 2;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.about-text-btn {
+    margin-block: 50px;
+}
+.about-text-btn a:nth-child(1) {
+    margin-inline-end: 10px;
+}
+.about-text-btn a:nth-child(2) {
+    background-color: var(--second-color);
+    color: var(--color-white);
+}
+.about-text-btn a:hover {
+    background-color: var(--first-color);
+}
 .about-row {
     display: flex;
     gap: 20px;
     width: 100%;
     justify-content: space-between;
 }
-.about-info{
-    position: relative;
+.about-info {
+    width: auto;
+    margin: auto;
+}
+
+.about-info h3 {
+    text-align: center;
+}
+
+.timeline {
     display: flex;
     flex-direction: column;
-    padding-block: 30px 30px;
-    padding-inline: 30px;
-    width: 100%;
-    height: fit-content;
-    background: var(--color-white);
-    box-shadow: 1px 8px 10px 2px var(--first-shadow-color);
-    border-radius: 20px;
+    position: relative;
+    padding: none;
 }
+.timeline-item {
+    display: flex;
+    flex-direction: row;
+}
+.timeline-date {
+    width: 50%;
+    text-align: right;
+    padding-right: 30px;
+    position: relative;
+    display:grid;
+    align-items: center;
+}
+.timeline-content {
+    width: 100%;
+    padding-left: 30px;
+    border-left: 2px solid #9c9c9c;
+    padding-block: 30px;
+}
+.timeline-content .about-title {
+    font-weight: bold;
+}
+.timeline-date:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -17px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: var(--third-color);
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
 .about-row {
     display: flex;
     justify-content: space-between;
@@ -476,6 +576,8 @@ h3{
     white-space: nowrap;
 }
 
+
+
 /* ----- ABOUT / CERTIFICATIONS ----- */
 .cert-info{
     position: relative;
@@ -492,11 +594,51 @@ h3{
 .cert-row {
     display: flex;
     justify-content:space-between;
-    /* margin-bottom: 10px; */
+    align-items: center;
+    margin-bottom: 10px;
 }
-.column {
+.cert-column {
     padding: 10px 0px;
+    display: flex;
+    align-items: center;
 }
+.cert-title {
+    padding-inline-start: 20px;
+}
+.cert-item:hover .cert-item-img:after {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.cert-item h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 26px;
+    margin-bottom: 18px;
+}
+.cert-item-img {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+}
+.cert-item-img:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--second-color);
+    content: "";
+    -webkit-transition: all, 0.5s;
+    -o-transition: all, 0.5s;
+    transition: all, 0.5s;
+}
+.cert-img {
+    width: 70px;
+}
+
 .cert-date {
     background: var(--third-color);
     color: var(--color-white);
@@ -689,10 +831,10 @@ h3{
     transition: all .5s ease;
 }
 .profile-text h3{
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 500;
     height: 20%;
-    padding: 20px;
+    padding: 5px;
     letter-spacing: 1px;
     color: #efefefc5;
 }

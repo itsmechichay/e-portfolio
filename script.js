@@ -33,11 +33,15 @@
 
 /* ----- TYPING EFFECT ----- */
    var typingEffect = new Typed(".typedText",{
-      strings : ["Niña Jorene"],
+      strings : [
+        "imagining the future of technology.",
+        "crafting tomorrow's tech solutions today.",
+        "exploring the limitless possibilities of tech.",
+      ],
       loop : true,
-      typeSpeed : 100, 
-      backSpeed : 80,
-      backDelay : 5000
+      typeSpeed : 40, 
+      backSpeed : 30,
+      backDelay : 3000
    })
 
 
@@ -49,7 +53,6 @@
       reset: true     
    })
 
-  /* -- HOME -- */
   sr.reveal('.featured-text-card',{})
   sr.reveal('.featured-name',{delay: 100})
   sr.reveal('.featured-text-info',{delay: 200})
@@ -72,7 +75,6 @@
 
 /* ----- ## -- SCROLL REVEAL LEFT_RIGHT ANIMATION -- ## ----- */
 
-  /* -- ABOUT INFO & CONTACT INFO -- */
   const srLeft = ScrollReveal({
     origin: 'left',
     distance: '80px',
@@ -83,7 +85,6 @@
   srLeft.reveal('.about-info',{delay: 100})  
   srLeft.reveal('.contact-info',{delay: 100})
 
-  /* -- ABOUT SKILLS & FORM BOX -- */
   const srRight = ScrollReveal({
     origin: 'right',
     distance: '80px',
