@@ -436,50 +436,51 @@ h3{
 }
 
 
-
 /* ----- ABOUT INFO ----- */
 .about-me-row {
     display: grid;
     grid-template-columns: 2fr 6fr;
-    grid-template-rows: 1000px;
+    grid-template-rows: 2fr 1fr;
     gap: 10px;
-    height: 550px;
+}
+.about-me-row > div:nth-child(1) {
+    grid-row: span 2;
 }
 .img-container {
     position: relative;
     width: 100px;
     padding: 30px;
+    margin-top: 30px;
+    height: max-content;
     animation: imgFloat 8s ease-in-out infinite;
 }
 .shape {
     position: absolute;
-    top: 80px;
-    width: 225%;
-    height: 30%;
+    top: 25px;
+    left: 40px;
+    width: 200px;
+    height: 39%;
     background-color: #f0f0f0; 
     /* background: linear-gradient(to top left, #ffffff, #d6d5d5); */
     border-radius: 5px;
     box-shadow: 8px 8px 10px 0px var(--first-shadow-color);
     z-index: -1; 
+    transform: rotate(45deg);
+}
+.row-image:hover {
+    transform: scale(1.1);
 }
 .row-image {
     position: relative;
     z-index: 1;
-    height: 45%;
+    height: 450px;
 }
 .about-text-container {
     position: relative;
     max-width: fit-content;
     padding-inline: 20px;
-    padding-block: 50px;
-}
-.big {
-    position: absolute;
-    font-size: 150px;
-    padding-top: 45px;
-    font-weight: bolder;
-    color: rgba(0, 0, 0, 0.1); 
-    z-index: 1; 
+    padding-block-start: 50px;
+    height: max-content;
 }
 .about-text-info{
     font-size: 20px;
@@ -489,8 +490,21 @@ h3{
     text-align: justify;
     text-justify: inter-word;
 }
+.about-text-info::before {
+    content: "About Me"; /* Background text */
+    position: absolute;
+    font-size: 150px;
+    z-index: -1;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 .about-text-btn {
-    margin-block: 50px;
+    margin-inline-start: 20px;
 }
 .about-text-btn a:nth-child(1) {
     margin-inline-end: 10px;
@@ -548,7 +562,7 @@ h3{
     content: '';
     position: absolute;
     top: 50%;
-    right: -17px;
+    right: -17.5px;
     transform: translateY(-50%);
     width: 30px;
     height: 30px;
